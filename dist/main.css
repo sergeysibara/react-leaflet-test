@@ -1,0 +1,15 @@
+html, body{
+    height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+h3{
+    margin: 0;
+}
+#react-main{
+    height: calc(100% - 30px);
+}
+
+.leaflet-container{
+    height: 100%;
+}

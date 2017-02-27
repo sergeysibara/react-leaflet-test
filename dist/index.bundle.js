@@ -14,22 +14,28 @@ webpackJsonp([0],[
 	
 	var _leaflet = __webpack_require__(3);
 	
+	var _leaflet2 = _interopRequireDefault(_leaflet);
+	
+	var _reactLeaflet = __webpack_require__(5);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var position = [51.505, -0.09];
+	_leaflet2.default.Icon.Default.imagePath = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/images/';
+	
+	var position = [39.9528, -75.1638];
 	
 	var map = _react2.default.createElement(
-	    _leaflet.Map,
-	    { center: position, zoom: 13 },
-	    _react2.default.createElement(_leaflet.TileLayer, {
+	    _reactLeaflet.Map,
+	    { center: position, zoom: 12 },
+	    _react2.default.createElement(_reactLeaflet.TileLayer, {
 	        url: 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
 	        attribution: '\xA9 <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 	    }),
 	    _react2.default.createElement(
-	        _leaflet.Marker,
+	        _reactLeaflet.Marker,
 	        { position: position },
 	        _react2.default.createElement(
-	            _leaflet.Popup,
+	            _reactLeaflet.Popup,
 	            null,
 	            _react2.default.createElement(
 	                'span',

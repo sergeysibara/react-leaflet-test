@@ -43,7 +43,8 @@ module.exports = {
         alias: {
             react: configPaths.react,
             'react-dom': configPaths.reactDom,
-            leaflet: configPaths.reactLeaflet,
+            leaflet: configPaths.leaflet,
+            'react-leaflet':configPaths.reactLeaflet
         },
         extensions: ['', '.js']
     },
